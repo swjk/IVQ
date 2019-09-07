@@ -1,6 +1,20 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.mycompany.app</groupId>
-  <artifactId>my-app</artifactId>
+  <groupId>com.swjk</groupId>
+  <artifactId>ivq</artifactId>
   <version>1</version>
+  <dependencies>
+
+       <!-- junit 5, unit test -->
+       <dependency>
+           <groupId>org.junit.jupiter</groupId>
+           <artifactId>junit-jupiter-engine</artifactId>
+           <version>5.3.1</version>
+           <scope>test</scope>
+       </dependency>
+
+   </dependencies>
+
+
+
 </project>
