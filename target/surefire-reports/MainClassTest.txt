@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: MainClassTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.147 sec <<< FAILURE! - in MainClassTest
-mainTest()  Time elapsed: 0.038 sec  <<< FAILURE!
-org.opentest4j.AssertionFailedError: Must be equal ==> expected: <0> but was: <1>
-	at MainClassTest.mainTest(MainClassTest.java:9)
-
