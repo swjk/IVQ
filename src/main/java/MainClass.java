@@ -1,17 +1,20 @@
+package sc;
+
 /**
 *   Main Class description
 *
 */
 
+import org.apache.spark.*;
+
 public class MainClass {
 
-    public static void main(String[] args) {
-        // Prints "Hello, World" to the terminal window.
-        System.out.println("Hello, World");
-        System.out.println("Hello2, World");
-        System.out.println("Hello2, World");
-        System.out.println("Hello3, World");
+    public static int count = 0;
 
+    public void sparkTest(){
+      int t = 0;
+
+      return;
     }
 
 }
