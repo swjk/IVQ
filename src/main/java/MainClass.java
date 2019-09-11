@@ -7,7 +7,10 @@ package sc;
 import org.apache.spark.api.java.*;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.*;
-import java.util.*;
+import java.util.List;
+import org.apache.spark.api.java.function.Function;
+
+
 
 public class MainClass {
 
@@ -29,6 +32,15 @@ public class MainClass {
 
     List<String> llist = lines.collect();
     System.out.println(llist);
+
+
+
+    JavaRDD<String> filtered_lines = Transformations.filtering(lines, (String a ) -> {return a.length()>1; });
+    List<String> flist = filtered_lines.collect();
+    System.out.println(flist);
+
+
+
 
     return;
   }
