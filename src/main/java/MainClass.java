@@ -28,7 +28,8 @@ public class MainClass {
     JavaRDD<String> lines = spark_context.textFile("file1.txt");
 
     List<String> llist = lines.collect();
-    System.out.print(llist);
+    System.out.println(llist);
+
     return;
   }
 
