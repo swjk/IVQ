@@ -7,31 +7,28 @@ package sc;
 import org.apache.spark.api.java.*;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.*;
-
+import java.util.*;
 
 public class MainClass {
 
   public static int count = 0;
 
   public static void main(String[] args) {
-    System.out.print("test");
+    sparkTest();
   }
 
 
-  public void sparkTest(){
+  public static void sparkTest(){
 
 
 
     SparkConf conf = new SparkConf().setAppName("IVQ").setMaster("local[2]");
     JavaSparkContext spark_context = new JavaSparkContext(conf);
 
-    JavaRDD<String> lines = spark_context.textFile("../resources/file1.txt");
+    JavaRDD<String> lines = spark_context.textFile("file1.txt");
 
-
-    for(String line: lines.collect()){
-      System.out.print("* " + line);
-    }
-
+    List<String> llist = lines.collect();
+    System.out.print(llist);
     return;
   }
 
