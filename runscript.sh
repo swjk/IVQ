@@ -1,5 +1,21 @@
 #!/bin/bash
 
 echo "Running bash script"
-mvn clean
-mvn test
+
+
+
+buildProject()
+  {
+    mvn clean
+    mvn install
+    java -jar target/ivq-1.jar
+  }
+
+
+runTests()
+  {
+    mvn clean
+    mvn test
+  }
+
+$@
